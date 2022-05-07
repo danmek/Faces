@@ -4,9 +4,11 @@ In terms of ethical decisions, one of the main criticisms of facial recognition 
 
 ## Technical Decisions
 * Design challenge(s) and how I addressed them
+
 Initially, I wanted to build my website from scratch, but my limited knowledge and time constraints motivated me to look for a more efficient solution in using (and crediting) a pre-existing website design template. I also struggled to design the right experiment using the FaceNet and Transformers models, I struggled with some of the image manipulations and with understanding the different cells and components of the code to get it to do what I wanted it to do.
 
 * New tools and technology used
+
 I learned to use and implement several new tools and technology, including Google Colab, Canva (for image creation), PhotoShop (for image manipulation). I taught myself more complex implementations of HTML, CSS and JavaScript for the web design portion of the project. I also created a GitHub repository to make the website publicly available.
 
 ## Ethical Decisions
@@ -18,4 +20,5 @@ Indirect users would be those whose faces are being recognized using this techno
 
 ### User impact with scale
 * Misuse of project features
+
 Some of the project features, such as the display of manipulated images of celebrities for the experiments, could be used for making fun of them, since the resulting images are odd-looking to the human eye. There are also implications in how companies use facial recognition algorithms for law enforcement, targeting and discrimination. These findings at scale can help influence how this technology evolves and becomes more pervasive.
