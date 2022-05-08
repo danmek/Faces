@@ -7,6 +7,7 @@
 <html>
 	<head>
 		<title>Computer Vision</title>
+		<link rel="icon" type="image/x-icon" href="/images/FaceTransformer.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/styles.css" />
@@ -18,19 +19,20 @@
 				<section id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html">Computer Vision for Holistic Face Recognition</a></h1>
+						<h1><a href="index.html">Computer Vision for Face Recognition</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="project.html">Project Details</a></li>
+								<li class="current"><a href="index.html">About</a></li>
+								<li><a href="part1.html">Part I</a></li>
+								<li><a href="part2.html">Part II</a></li>
+								<li><a href="part3.html">Part III</a></li>
 							</ul>
 						</nav>
 
 					<!-- Banner -->
-						<section id="banner">
-						</section>
+						<hr>
 
 					<!-- Intro -->
 						<section id="intro" class="container">
@@ -40,33 +42,35 @@
 										<header>
 											<h2>Background</h2>
 										</header>
-										<p>This project is looking at a comparative analysis of the performance of two neural network architectures: a convolutional neural network (CNN) and a transformers network. The idea is to understand how they each do face processing, and which has a more holistic interpretation of faces, compared to human vision.</p>
-										<p><b>Hypothesis:</b> the Face Transformers network is better at holistic face processing than FaceNet, a CNN</p>
+										<p>Computer vision uses artificial intelligence (AI) to identify and recognize images emulating the way the human brain perceives the visual world. This project looks at the performance of two facial recognition model architectures: Face Transformer, a vision transformers network and FaceNet, a convolutional neural network (CNN). The goal is to understand how they each perform in processing faces holistically, in the same way humans do. In other words, it looks at how the two models perform in recognizing faces as a whole, or features within a given face.</p>
+										<p><b>Hypothesis: Transformers models are more likely to holistically recognize and identify faces than convolutional neural networks.</b></p>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium">
 									<section class="middle">
-										<a href="#" class="icon"><img src="images/FaceTransformer.png" alt="" /></a>
 										<header>
-											<h2>FaceTransformer</h2>
-										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-									</section>
+											<a href="https://github.com/zhongyy/Face-Transformer" class="icon" target="_blank"><img src="images/FaceTransformer.png" alt="" /></a>
+											<header>
+												<h2>Face Transformer</h2>
+											</header>
+											<p><a href="https://github.com/timesler/facenet-pytorch" class="icon" target="_blank">Face Transformer</a> is a model that uses vision transformers to calculate a context-dependent representation of an image by nudging each patch of the image to its contextual neighbor. This model seems to achieve comparable performance to CNNs with a similar number of parameters.</p>
+										</section>
 								</div>
 								<div class="col-4 col-12-medium">
 									<section class="last">
-										<a href="#" class="icon"><img src="images/FaceNeticon.png" alt="" /></a>
+										<a href="https://github.com/timesler/facenet-pytorch" class="icon" target="_blank"><img src="images/FaceNeticon.png" alt="" /></a>
 										<header>
 											<h2>FaceNet</h2>
 										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+										<p>The <a href="https://github.com/timesler/facenet-pytorch" class="icon" target="_blank">FaceNet</a> architecture has three key components: the Convolutional Backbone, the Embedding Layer (a fully-connected layer, composed of 128 features that are learned from the output of the convolutional backbone) and the L2 Normalization (uses an Euclidian space to determine the classification of same and different).
+										</p>
 									</section>
 								</div>
 							</div>
 							<footer>
 								<ul class="actions">
-									<li><a href="project.html" class="button large">Project Details</a></li>
-									<li><a href="https://colab.research.google.com/gist/danmek/43b231b9f027abe7a6b71d526b98ed25/psy1406_facenetcnn_facetransformer_dm.ipynb" class="button alt large" target="_blank">Take a Peak at my Google Colab Notebook</a></li>
+									<li><a href="part3.html" class="button large">See Results</a></li>
+									<li><a href="https://colab.research.google.com/gist/danmek/765afef900ebdb06137647c9f7ad60fb/psy1406_facenetcnn_facetransformer_dm.ipynb" class="button alt large" target="_blank">Google Colab Notebook</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -91,10 +95,10 @@
 													<header>
 														<h3>Part I: Controlled Single-Face Variations</h3>
 													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+													<p>Variations include: inverted face, one-eyed, no eyes, no nose, no mouth, no hair, inverted features, inverted features and face.</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">See Results</a></li>
+															<li><a href="part1.html" class="button alt">See More</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -103,12 +107,12 @@
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/Mosaic.png" alt="" /></a>
 													<header>
-														<h3>Part II: Variations Across Different Faces</h3>
+														<h3>Part II: Diverse-Face Variations</h3>
 													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+													<p>Using one face as anchor, we compare diverse faces against similar variations of specific features, such as eyes, nose and hair.</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">See Results</a></li>
+															<li><a href="part2.html" class="button alt">See More</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -117,12 +121,12 @@
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/loss_function.png" alt="" /></a>
 													<header>
-														<h3>Measuring Euclidian Distance</h3>
+														<h3>Part III: Results and Discussion</h3>
 													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+													<p>Hypothesis is rejected: Face Transformer is less likely to holistically recognize and identify faces than FaceNet.</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="#" class="button alt">Interpretation</a></li>
+															<li><a href="part3.html" class="button alt">See More</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -142,12 +146,17 @@
 				<section id="footer">
 					<div class="container">
 						<div class="row">
-
-							<div class="col-4 col-12-medium">
+							<div>
+								<section>
+									<p>
+										This project was designed and executed by Dana Mekler, Masters in Public Administration at Harvard Kennedy School. It is part of a final deliverable for two classes,
+										<a href="https://cs50.harvard.edu/college/2022/spring/" target="_blank">CS50: Introduction to Computer Science</a> and <a href="https://www.coursicle.com/harvard/courses/PSY/1406/" target="_blank">PSY 1406: Biological and Artificial Visual Systems</a>.
+									</p>
+								</section>
 								<section>
 									<p>
 										Web design template by
-										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>
+										<a href="http://twitter.com/ajlkn" target="_blank">AJ</a> for <a href="http://html5up.net/" target="_blank">HTML5 UP</a>.
 									</p>
 								</section>
 							</div>
