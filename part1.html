@@ -60,8 +60,8 @@
 									</header>
 									<a href="#" class="image"><img src="images/Experiment1.png"></a>
 									<p>
-										Both the Face Transformer (FaceVit) and FaceNet models seem to process faces holistically, as observed by the fact that the biggest Euclidian distance to the anchor is with the two images that are upside-down (variation #0 and variation #7). FaceNet seems to perform bettwe at face processing: the Euclidian distance between manipulated images is much lower than that of Face Transformer.
-										FaceNet has a harder time recognizing a face with no eyes, while Face Transformer has a harder time identifying a face without a nose.
+										Both the Face Transformer (FaceVit) and FaceNet models seem to process faces holistically, as observed by the fact that the biggest Euclidian distance to the anchor is with the two images that are upside-down (variation #0 and variation #7). FaceNet seems to perform better at face processing: the Euclidian distance between manipulated images of the same person is much lower than that of Face Transformer.
+										Other notable findings are that FaceNet has a harder time recognizing a face with no eyes, while Face Transformer has a harder time identifying a face without a nose or without hair.
 									</p>
 								</section>
 								<section>
@@ -78,7 +78,8 @@
 										<h3>Conclusion</h3>
 									</header>
 									<p>
-										There don't seem to be substantial differences in how Face Transformer and FaceNet perform in recognizing faces holistically. Both are more likely to recognize an upright face than a face upside-down, whether the elements in the face are upright, or inverted. If we were to measure a holistic processing index, it seems like FaceNet is able to process with a higher incidence than Face Transformer.
+										There don't seem to be substantial differences in how Face Transformer and FaceNet perform in recognizing faces holistically. Moth models behave similar to human vision, in that they are more likely to recognize an upright face than a face upside-down, whether the elements in the face are upright, or inverted. If we were to measure a holistic processing index, it seems like FaceNet is able to recognize images of the same person with a higher incidence than Face Transformer.
+										In order to investigate further the difference in effect between the two models in processing faces without a nose versus faces with no eyes, and faces with no hair, we conducted a second experiment invesigating face recognition of different faces with these specific effects.
 									</p>
 								</section>
 							</article>
