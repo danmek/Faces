@@ -44,7 +44,7 @@
 									<p>Using one face as anchor, we compare diverse faces against similar variations</p>
 								</header>
 								<p>
-									In this second part of the experiment, instead of comparing one anchor image with manipulations of the same image, we compare performance across manipulations for any given image.
+									In this second part of the experiment, instead of comparing one anchor image with the same manipulation of images of different faces, focusing on the specific modifications that yielded interesting results in experiment 1: faces with no nose, faces with no eyes, and faces with no hair.
 								</p>
 								<a href="#" class="image"><img src="images/Mosaic_all.png"></a>
 								<p>
@@ -54,18 +54,22 @@
 										<h3>Observations</h3>
 									</header>
 									<p>
-										In this experiment, FaceNet has a harder time recognizing a face without a nose, compared to Face Transformer.
+										In this experiment, both networks perform similarly in recognizing faces without eyes.
 									</p>
 									<a href="#" class="image"><img src="images/Experiment2.png"></a>
+									<br>
+									<br>
 									<p>
+										Face Transformer has a harder time recognizing a face without a nose or without hair, compared to FaceNet.
 									</p>
+									<a href="#" class="image"><img src="images/Experiment2_1.png"></a>
 								</section>
 								<section>
 									<header>
 										<h3>Conclusion</h3>
 									</header>
 									<p>
-										The two networks perform the same with the same type of images. There is no substantial difference in how they perform holistic processing.
+										The two networks perform very similarly with the same type of images. There is no substantial difference in how they process images holistically, even if there are variations in how accurately they recognize faces.
 									</p>
 								</section>
 							</article>
