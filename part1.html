@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Computer Vision</title>
+		<link rel="icon" type="image/x-icon" href="/images/FaceTransformer.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/styles.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Computer Vision for Face Recognition</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">About</a></li>
+								<li class="current"><a href="part1.html">Part I</a></li>
+								<li><a href="part2.html">Part II</a></li>
+								<li><a href="part3.html">Part III</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<header>
+									<h2>Controlled Single-Face Variations</h2>
+									<p>Variations include: inverted face, one-eyed, no eyes, no nose, no mouth, no hair, inverted features, inverted features inverted face</p>
+								</header>
+								<p>
+									The first experiment looks at a single image of a celebrity's face as an anchor, and compares how both models perform using different variations. Considering findings on human vision and how faces are processed holistically by the human brain (cf. Watson), the first variation is looking at upright faces versus inverted (upside-down) faces.
+									Other variations in this first experiment involve obfuscating, one at a time, unique elements that make a face distinctive, including eyes, nose, mouth and hair.
+									To add an extra layer of complexity, the last variation of the experiment looks at inverting features within a face, without changing the face's orientation (see "6_inverted_features"). This effect is evident to the human eye when the face is upright, but becomes almost invisible if the face is inverted. The idea is to see if this behavior is replicated for the machine.
+								</p>
+								<a href="#" class="image"><img src="images/Lupita_all.png"></a>
+								<br>
+								<br>
+								<p>
+									Using a <a href="https://colab.research.google.com/gist/danmek/765afef900ebdb06137647c9f7ad60fb/psy1406_facenetcnn_facetransformer_dm.ipynb" class="icon" target="_blank">Google Colab Notebook</a> to play with the FaceNet and Face Transformer models, the next step is to feed the manipulated images to both models. This step allows us to compute the embeddings for a set of images for a given face model, using a list of images located in the images folder, and compute the embeddings. We can then access the embeddings for each image by name. The code tries to locate the faces in the image we supplied, so we can look at what the final cropped images look like. Finally, we can compare embeddings for any pair of images, and we observe the Euclidean distance between each pair of images. The larger the distance, the bigger the model's perceived difference between the images.
+								</p>
+								<section>
+									<header>
+										<h3>Observations</h3>
+									</header>
+									<a href="#" class="image"><img src="images/Experiment1.png"></a>
+									<p>
+										Both the Face Transformer (FaceVit) and FaceNet models seem to process faces holistically, as observed by the fact that the biggest Euclidian distance to the anchor is with the two images that are upside-down (variation #0 and variation #7). FaceNet seems to perform bettwe at face processing: the Euclidian distance between manipulated images is much lower than that of Face Transformer.
+										FaceNet has a harder time recognizing a face with no eyes, while Face Transformer has a harder time identifying a face without a nose.
+									</p>
+								</section>
+								<section>
+									<header>
+										<h3>Further Evidence</h3>
+									</header>
+									<p>
+										The same experiment is performed with five other celebrity faces of different ethnicities, to validate whether the same behavior is observed across faces. With some minor variations, the same results are observed across different examples, with consistently better performance for FaceNet, where Euclidian distances between the anchor and the modified images are in average lower than with FaceVit.
+									</p>
+									<a href="#" class="image"><img src="images/mosaic2.png"></a>
+								</section>
+								<section>
+									<header>
+										<h3>Conclusion</h3>
+									</header>
+									<p>
+										There don't seem to be substantial differences in how Face Transformer and FaceNet perform in recognizing faces holistically. Both are more likely to recognize an upright face than a face upside-down, whether the elements in the face are upright, or inverted. If we were to measure a holistic processing index, it seems like FaceNet is able to process with a higher incidence than Face Transformer.
+									</p>
+								</section>
+							</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div>
+								<section>
+									<p>
+										This project was designed and executed by Dana Mekler, Masters in Public Administration at Harvard Kennedy School. It is part of a final deliverable for two classes,
+										<a href="https://cs50.harvard.edu/college/2022/spring/" target="_blank">CS50: Introduction to Computer Science</a> and <a href="https://www.coursicle.com/harvard/courses/PSY/1406/" target="_blank">PSY 1406: Biological and Artificial Visual Systems</a>.
+									</p>
+								</section>
+								<section>
+									<p>
+										Web design template by
+										<a href="http://twitter.com/ajlkn" target="_blank">AJ</a> for <a href="http://html5up.net/" target="_blank">HTML5 UP</a>.
+									</p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
