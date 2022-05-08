@@ -17,6 +17,8 @@ Images are stored in the images folder.
 
 # Google Colab Notebook
 This notebook was created using code from Face Transformers and FaceNet, referenced at the top. Detailed instructions on how to run each cell, how to modify them, and what they do can be found in the notebook.
+Link: https://colab.research.google.com/gist/danmek/765afef900ebdb06137647c9f7ad60fb/psy1406_facenetcnn_facetransformer_dm.ipynb
+
 
 # Video presentation
 This is a link to the recorded walk-through of the project:
