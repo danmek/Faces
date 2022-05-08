@@ -43,22 +43,27 @@
 									<h2>Results and Discussion</h2>
 									<p>Hypothesis is rejected: Face Transformer is less likely to holistically recognize and identify faces than FaceNet</p>
 								</header>
-								<section>
-									<header>
-										<h3>Discussion</h3>
-									</header>
-									<p>
-										In human vision, configurational information is important in face perception. This configurational information is only readily derived from an upright face, it does not interfere in the perception of inverted faces. Interestingly, it is easier to identify the constituent parts of facial features as a whole. Face inversion seems to disrupt holistic face processing, pointing out that spatial and orientation processing is used for face recognition.
-									</p>
-								</section>
 								<p>
-									In looking at how Face Tranformer operates, by processing an image as a linear projection of different patches and encoding them based on similarities between them, it would make sense that it would be a good model for looking at faces holistically.
+									While both networks are processing faces holistically, FaceNet seems to be slightly more accurate at identifying faces regardless of the manipulations. It might be helpful to understand how each of the networks are designed to understand the initial hypothesis, and try to make sense of the results.
+									<br>
+									In looking at how Face Tranformer operates, by processing an image as a linear projection of different patches and encoding them based on similarities between them, it seemed plausible that it would be a good model for looking at faces holistically (see a schematic of the model architecture below).
 								</p>
 								<a href="#" class="image"><img src="images/face_transformer_model.jpg"></a>
 								<p>
-									In contrast, FaceNet has different convolutional layers.
+									In contrast, FaceNet has different convolutional layers that process images in patches, which would make it possible to identify two faces of the same person in different orientations, independent of the whole (see model architecture below).
 								</p>
 								<a href="#" class="image"><img src="images/FaceNet_model.png"></a>
+								<section>
+									<header>
+										<h3>Questions for Further Discussion</h3>
+									</header>
+									<p>
+										In human vision, configurational information is important in face perception. This configurational information is only readily derived from an upright face, it does not interfere in the perception of inverted faces. Interestingly, it is easier to identify the constituent parts of facial features as a whole. Face inversion seems to disrupt holistic face processing, pointing out that spatial and orientation processing is used for face recognition.
+										The question still lingering is why machines emulate the brain for holistic face processing. Both FaceNet and Face Transformer network architectures are set up to recognize faces as a whole, but it might be useful for these algorithms to be able to recognize a face regardless of its orientation or feature obfuscation.
+										<br>
+										More experiments would be needed to compare different face manipulations and reach a more precise calibration of which of the two models has a higher holistic face processing index.
+									</p>
+								</section>
 								<section>
 									<header>
 										<h3>Sources</h3>
