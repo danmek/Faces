@@ -1,5 +1,5 @@
 # Context
-This is a user manual for the FaceNet vs FaceTransformers project by Dana Mekler.
+This is a user manual for the project Computer Vision for Face Recognition using FaceNet vs Face Transformer by Dana Mekler. The website is publically available at https://danmek.github.io/Faces/.
 
 # HTML
 The project contains 4 static HTML pages with the following information:
