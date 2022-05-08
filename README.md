@@ -21,4 +21,4 @@ Link: https://colab.research.google.com/gist/danmek/765afef900ebdb06137647c9f7ad
 
 
 # Video presentation
-This is a link to the recorded walk-through of the project:
+This is a link to the recorded walk-through of the project: https://youtu.be/cDmzVnrFXx0
