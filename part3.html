@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Computer Vision</title>
+		<link rel="icon" type="image/x-icon" href="/images/FaceTransformer.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/styles.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Computer Vision for Face Recognition</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">About</a></li>
+								<li><a href="part1.html">Part I</a></li>
+								<li><a href="part2.html">Part II</a></li>
+								<li class="current"><a href="part3.html">Part III</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<header>
+									<h2>Results and Discussion</h2>
+									<p>Hypothesis is rejected: Face Transformer is less likely to holistically recognize and identify faces than FaceNet</p>
+								</header>
+								<p>
+									In looking at how Face Tranformer operates, by processing an image as a linear projection of different patches and encoding them based on similarities between them, it would make sense that it would be a good model for looking at faces holistically.
+								</p>
+								<a href="#" class="image"><img src="images/face_transformer_model.jpg"></a>
+								<p>
+									In contrast, FaceNet has different convolutional layers.
+								</p>
+								<a href="#" class="image"><img src="images/FaceNet_model.png"></a>
+								<section>
+									<header>
+										<h3>Discussion</h3>
+									</header>
+									<p>
+										In human vision, configurational information is important in face perception. This configurational information is only readily derived from an upright face, it does not interfere in the perception of inverted faces. Interestingly, it is easier to identify the constituent parts of facial features as a whole. Face inversion seems to disrupt holistic face processing, pointing out that spatial and orientation processing is used for face recognition.
+									</p>
+								</section>
+								<section>
+									<header>
+										<h3>Sources</h3>
+									</header>
+									<ul>
+										<li>Krizhevsky, A., Sutskever, I. and Hinton, G.E., 2012. Imagenet classification with deep convolutional neural networks. Advances in neural information processing systems, 25.</li>
+										<li>Schroff, F., Kalenichenko, D. and Philbin, J., 2015. Facenet: A unified embedding for face recognition and clustering. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 815-823).</li>
+										<li>Watson, T.L., 2013. Implications of holistic face processing in autism and schizophrenia. Frontiers in psychology, 4, p.414.</li>
+										<li>Young, A.W., Hellawell, D. and Hay, D.C., 2013. Configurational information in face perception. Perception, 42(11), pp.1166-1178.</li>
+										<li>Zhao, M., Bülthoff, H.H. and Bülthoff, I., 2016. A shape-based account for holistic face processing. Journal of Experimental Psychology: Learning, Memory, and Cognition, 42(4), p.584.</li>
+										<li>Zhong, Y. and Deng, W., 2021. Face transformer for recognition. arXiv preprint arXiv:2103.14803.</li>
+									</ul>
+								</section>
+							</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div>
+								<section>
+									<p>
+										This project was designed and executed by Dana Mekler, Masters in Public Administration at Harvard Kennedy School. It is part of a final deliverable for two classes,
+										<a href="https://cs50.harvard.edu/college/2022/spring/" target="_blank">CS50: Introduction to Computer Science</a> and <a href="https://www.coursicle.com/harvard/courses/PSY/1406/" target="_blank">PSY 1406: Biological and Artificial Visual Systems</a>.
+									</p>
+								</section>
+								<section>
+									<p>
+										Web design template by
+										<a href="http://twitter.com/ajlkn" target="_blank">AJ</a> for <a href="http://html5up.net/" target="_blank">HTML5 UP</a>.
+									</p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
